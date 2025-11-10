@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3ofxq8bhtvff"]
+
+[ext_resource type="PackedScene" uid="uid://beu4h230hbr46" path="res://scenes/soul_cage.tscn" id="1_537il"]
+[ext_resource type="Script" uid="uid://jw8hirsurv1y" path="res://scripts/fight.gd" id="1_osnhv"]
+[ext_resource type="PackedScene" uid="uid://bkb2sdpnu1mjt" path="res://scenes/fight_panel.tscn" id="2_htrw1"]
+
+[node name="fight" type="Node2D"]
+script = ExtResource("1_osnhv")
+
+[node name="SoulCage" parent="." instance=ExtResource("1_537il")]
+position = Vector2(123, 50)
+
+[node name="Monsters" type="Node2D" parent="."]
+
+[node name="FightPanel" parent="." instance=ExtResource("2_htrw1")]
+position = Vector2(0, 125)

@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bhihd585l4hiq"]
+
+[node name="character_button" type="TextureButton"]

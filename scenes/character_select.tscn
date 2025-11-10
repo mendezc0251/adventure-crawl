@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7qbnfhiht0p0"]
+
+[ext_resource type="Script" uid="uid://deirt80yd8s6q" path="res://scripts/character_select.gd" id="1_jgus3"]
+[ext_resource type="Script" uid="uid://k8i6lo3x3uva" path="res://scripts/h_flow_container.gd" id="2_uxcyu"]
+
+[node name="character_select" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_jgus3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14767182, 0.14767179, 0.14767179, 1)
+
+[node name="HFlowContainer" type="HFlowContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 32.0
+grow_vertical = 2
+script = ExtResource("2_uxcyu")
