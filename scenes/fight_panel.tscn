@@ -21,5 +21,6 @@ theme_override_font_sizes/normal_font_size = 16
 text = "This is sample text..."
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-offset_top = -38.0
-offset_right = 256.0
+offset_top = -16.0
+offset_bottom = -16.0
+alignment = 2
