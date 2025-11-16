@@ -7,8 +7,8 @@ var is_moving = false
 
 func _ready() -> void:
 	# Set texture of char_sprite depending on character selected
-	char_sprite.texture = Global.soul_textures[Global.characters.find(Global.characterSelected)]
-	target_sprite.texture = Global.target_textures[Global.characters.find(Global.characterSelected)]
+	char_sprite.texture = Global.characterSelected.soul_texture
+	target_sprite.texture = Global.characterSelected.target_texture
 
 func _physics_process(delta: float) -> void:
 	if is_moving == false:

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Character" load_steps=5 format=3 uid="uid://ilgw3fkq5rll"]
+
+[ext_resource type="Resource" uid="uid://j3xg605ajn6f" path="res://character_inventories/Belch_Inventory.tres" id="1_aqxjg"]
+[ext_resource type="Script" uid="uid://cjar3cogfnoti" path="res://scripts/character.gd" id="2_nucx2"]
+[ext_resource type="Texture2D" uid="uid://bpkkyq5a8ka3y" path="res://assets/sprites/Belch Soul.png" id="3_khfv4"]
+[ext_resource type="Texture2D" uid="uid://fpk84t1h6jx1" path="res://assets/sprites/BelchMoveIndicator.png" id="4_we2ay"]
+
+[resource]
+script = ExtResource("2_nucx2")
+soul_texture = ExtResource("3_khfv4")
+target_texture = ExtResource("4_we2ay")
+character_name = "Belch"
+character_inventory = ExtResource("1_aqxjg")
+metadata/_custom_type_script = "uid://cjar3cogfnoti"

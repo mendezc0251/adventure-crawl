@@ -1,4 +1,4 @@
 class_name Inventory
 extends Resource
 
-var items : Array[Item]
+@export var items : Array[Item]
