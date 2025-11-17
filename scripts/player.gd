@@ -55,6 +55,7 @@ func move(direction: Vector2):
 	global_position = tile_map.map_to_local(target_tile)
 	
 	char_sprite.global_position = tile_map.map_to_local(current_tile)
+	
 # function to see if player gets into an encounter
 func encounter(player_position):
 	var randomEncChance = randi()%100+1
@@ -62,5 +63,5 @@ func encounter(player_position):
 	var player_tile = tile_map.get_cell_tile_data(player_position)
 	# encounter found!
 	if randomEncChance<=player_tile.get_custom_data("encChance"):
-		var difficulty = player_tile.get_custom_data("difficulty")
+		Global.currentDifficulty = player_tile.get_custom_data("difficulty")
 		get_tree().change_scene_to_file("res://scenes/fight.tscn")

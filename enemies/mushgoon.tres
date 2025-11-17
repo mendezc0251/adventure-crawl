@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Enemy" load_steps=3 format=3 uid="uid://dplvpf21oy15u"]
+
+[ext_resource type="Script" uid="uid://bp5fad4q071tu" path="res://scripts/attacks.gd" id="1_gh431"]
+[ext_resource type="Script" uid="uid://b0nidw4li6cfg" path="res://scripts/enemy.gd" id="1_ppshl"]
+
+[resource]
+script = ExtResource("1_ppshl")
+name = "Mushgoon"
+hp = 40
+difficulty = 2
+metadata/_custom_type_script = "uid://b0nidw4li6cfg"
